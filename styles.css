@@ -57,7 +57,7 @@ main{
     
 }
 .main{
-    display:flex;
+    display:inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -65,23 +65,25 @@ main{
    
   
 }
-figure{
-    display: inline-flex;
+figure{display: inline-flex; 
+    
 }
 .mobile{
     width:100%;
     border-top-left-radius: 0.5rem;
     border-top-right-radius:0.5rem;
-  
+    
     
 }
 
 .content{
-    margin-top: 0;
+    margin-top: -3px;
     background-color: hsl(0, 0%, 100%);
      padding: 1rem;
      border-bottom-left-radius: 0.5rem;
      border-bottom-right-radius: 00.5rem;
+     
+     
 }
 .preview{
     font-family: 'Montserrat', sans-serif;
@@ -136,6 +138,53 @@ button{
     
 }
 
-/* font-family: 
-font-family: 
-font-family: 'Montserrat', sans-serif;   */
+button:hover{
+   background-color:#184131;
+   cursor:pointer;
+}
+.cart{
+    margin-right: 10px;
+}
+@media only screen and (min-width:768px){
+    main{
+        width:33.7rem;
+         margin: auto;
+       min-height: 90vh;
+        display:flex;
+        flex-direction: row;
+        
+        margin-top: 15px;
+        margin-bottom: 10px;
+        flex-grow:3;
+
+        
+    }
+    .main{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+   }
+        .mobile{
+            
+             
+            border-bottom-left-radius:0.5rem;
+                border-top-right-radius:0;
+                display: inline-flex;
+                
+                
+                
+            }
+            
+            .content{
+                margin-top: 0;
+                background-color: hsl(0, 0%, 100%);
+                 padding: 1rem;
+                 border-bottom-right-radius: 0.5rem;
+                 border-top-right-radius: 0.5rem;
+                 border-bottom-left-radius: 0;
+                
+            }
+} 
+ 
